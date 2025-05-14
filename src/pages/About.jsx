@@ -1,11 +1,14 @@
 import React from "react";
+import Banner from "../components/Banner";
+import bannerAbout from "../assets/banner-about.png";
 
-const About = () => {
+function About() {
 	return (
-		<div>
-			<h2>À propos de nous 📘</h2>
-		</div>
+		<>
+			<Banner image={bannerAbout} />
+			{/* Le reste de ta page "À propos" */}
+		</>
 	);
-};
+}
 
 export default About;
