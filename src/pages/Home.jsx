@@ -1,7 +1,9 @@
-import React from "react";
-import BannerHome from "../components/BannerHome";
-import bannerHome from "../assets/banner-home.png";
 import { Link } from "react-router-dom";
+import data from "../data/logements.json";
+import BannerHome from "../components/BannerHome";
+import Card from "../components/Card";
+import bannerHome from "../assets/banner-home.png";
+import "../styles/home.scss";
 
 function Home() {
 	return (
@@ -10,16 +12,16 @@ function Home() {
 				image={bannerHome}
 				text="Chez vous, partout et ailleurs"
 			/>
-			{/* Le reste de ta page d’accueil */}
+
+			<div className="card-container">
+				{data.slice(0, 6).map((item) => (
+					<Link key={item.id} to={`/appartement/${item.id}`}>
+						<Card logement={item} />
+					</Link>
+				))}
+			</div>
 		</>
 	);
-	<div className="home">
-		{data.map((item) => (
-			<Link eky={item.id} to={`/appartement/${item.id}`}>
-				<Card logement={item} />
-			</Link>
-		))}
-	</div>;
 }
 
 export default Home;

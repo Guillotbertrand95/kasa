@@ -8,3 +8,4 @@ function Card({ logement }) {
 		</Link>
 	);
 }
+export default Card;
