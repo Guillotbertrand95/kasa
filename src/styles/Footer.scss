@@ -1,5 +1,11 @@
-img {
-	width: 200px;
-	height: auto;
-	display: block;
+.footer {
+	width: 82vw; // toute la largeur de la fenêtre
+	background-color: #000; // ou une autre couleur
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: relative; // utile si tu veux le fixer plus tard
+}
+.logoF {
+	margin-left: 570px;
 }

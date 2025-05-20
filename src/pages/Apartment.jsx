@@ -20,7 +20,8 @@ function Apartment() {
 		<div className="apartment-details">
 			<h1>{logement.title}</h1>
 			<img src={logement.cover} alt={logement.title} />
-			<p>{logement.location}</p>
+			<h2>{logement.location}</h2>
+
 			{/* Ajoute ici les photos, description, rating, équipements, etc. */}
 		</div>
 	);

@@ -1,4 +1,8 @@
 .card-container {
+	max-width: 1400px;
+	height: auto;
+	background-color: #f6f6f6;
+	border-radius: 25px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); // 3 colonnes égales
 	gap: 2rem; // espace entre les cartes

@@ -1,7 +1,7 @@
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+	font-family: Montserrat sans-serif;
+	line-height: 143%;
+	font-weight: 500;
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
@@ -12,7 +12,11 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
 a {
 	font-weight: 500;
 	color: #646cff;

@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logoF.png"; // adapte le chemin si besoin
+import logo from "../assets/logoH.png"; // adapte le chemin si besoin
 import "../styles/navbar.scss"; // à créer si pas encore fait
 
 function Navbar() {
 	return (
 		<header className="navbar">
-			<img src={logo} alt="Logo du site" className="navbar-logo" />
+			<img src={logo} alt="Logo du site" className="navbar-logoH" />
 
 			<nav className="navbar-links">
 				<NavLink
