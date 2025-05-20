@@ -1,11 +1,21 @@
 .layout {
+	width: 1490px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-}
 
-.main-content {
-	flex: 1;
-	padding: 2rem;
-	background-color: #f9f9f9;
+	.main-content {
+		flex: 1;
+		padding: 20px;
+	}
+
+	&.page-home {
+		width: 100%;
+		height: auto;
+	}
+
+	&.page-about {
+		width: 100%;
+		height: auto;
+	}
 }

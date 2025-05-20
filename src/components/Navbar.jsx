@@ -1,19 +1,32 @@
-// src/components/Navbar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logoF.png"; // adapte le chemin si besoin
+import "../styles/navbar.scss"; // à créer si pas encore fait
 
 function Navbar() {
 	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/about">About</Link>
-				</li>
-			</ul>
-		</nav>
+		<header className="navbar">
+			<img src={logo} alt="Logo du site" className="navbar-logo" />
+
+			<nav className="navbar-links">
+				<NavLink
+					to="/"
+					className={({ isActive }) =>
+						isActive ? "active-link" : ""
+					}
+				>
+					Accueil
+				</NavLink>
+				<NavLink
+					to="/about"
+					className={({ isActive }) =>
+						isActive ? "active-link" : ""
+					}
+				>
+					A propos
+				</NavLink>
+			</nav>
+		</header>
 	);
 }
 

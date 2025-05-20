@@ -1,11 +1,11 @@
 import React from "react";
-import Banner from "../components/Banner";
-import bannerAbout from "../assets/banner-about.png";
+import BannerAbout from "../components/BannerAbout"; // ✅ Composant
+import bannerAboutImage from "../assets/banner-about.png"; // ✅ Image
 
 function About() {
 	return (
 		<>
-			<Banner image={bannerAbout} />
+			<BannerAbout image={bannerAboutImage} />
 			{/* Le reste de ta page "À propos" */}
 		</>
 	);
