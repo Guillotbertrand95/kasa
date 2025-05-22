@@ -13,11 +13,11 @@ function Home() {
 				text="Chez vous, partout et ailleurs"
 			/>
 
-			<div className="card-container">
+			<div className="cards-container">
 				{data.slice(0, 6).map((item) => (
-					<Link key={item.id} to={`/appartement/${item.id}`}>
+					<div key={item.id} className="card-wrapper">
 						<Card logement={item} />
-					</Link>
+					</div>
 				))}
 			</div>
 		</>

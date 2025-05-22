@@ -1,11 +1,14 @@
 .footer {
-	width: 82vw; // toute la largeur de la fenêtre
-	background-color: #000; // ou une autre couleur
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* ou space-between, selon ce que tu veux */
+	background-color: #000;
 	color: white;
-	text-align: center;
-	padding: 10px;
-	position: relative; // utile si tu veux le fixer plus tard
+	padding: 20px;
 }
+
 .logoF {
-	margin-left: 570px;
+	padding-top: 20px;
+	margin-left: 20px; /* un petit espacement */
 }

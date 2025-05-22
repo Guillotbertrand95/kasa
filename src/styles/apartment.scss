@@ -1,8 +1,14 @@
 .apartment-details {
-	max-width: 50%;
+	width: 100%;
+	font-family: montserrat;
+
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 }
-@media screen and (min-width: 768px) {
+
+.img-appart {
+	width: 100%; /* Prend toute la largeur du conteneur */
+	height: 400px; /* Ajuste la hauteur automatiquement pour garder les proportions */
+	object-fit: cover; /* Optionnel, utile si tu veux recadrer un peu sans déformation */
 }
