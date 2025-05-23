@@ -1,0 +1,32 @@
+@use "mixins";
+.test {
+	@include mixins.flex-between;
+}
+
+.about-container {
+	font-family: montserrat;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.collapse-header {
+	@include mixins.flex-between;
+
+	width: 97%;
+	height: 50px;
+
+	background-color: #ff6060;
+	color: white;
+	border-radius: 5px;
+
+	cursor: pointer;
+	padding: 0 20px; // 👉 ajoute de l'espace à gauche et à droite
+}
+.collapse-content {
+	@include mixins.fadeIn(0.3s);
+	width: auto;
+	background-color: #f6f6f673;
+	border-radius: 5px;
+}

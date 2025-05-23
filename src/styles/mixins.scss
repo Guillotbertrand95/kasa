@@ -1,0 +1,48 @@
+// en dehors de tout mixin
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeSlideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@mixin fadeSlideIn($duration: 0.4s, $timing: ease-in-out) {
+	animation: fadeSlideIn $duration $timing forwards;
+}
+
+// Mixin plus simple
+@mixin fadeIn($duration: 0.3s) {
+	animation: fadeIn $duration ease-in;
+}
+@mixin collapse-animated($duration: 0.5s, $timing: ease-in-out) {
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+	transition: max-height $duration $timing, opacity $duration $timing;
+
+	&.is-open {
+		max-height: 500px; // ajuste selon ton contenu
+		opacity: 1;
+		@include fadeSlideIn($duration, $timing);
+	}
+}
+
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
