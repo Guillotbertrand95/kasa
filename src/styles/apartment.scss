@@ -1,15 +1,75 @@
 @use "../styles/mixins.scss";
+
 .apartment-details {
 	width: 100%;
 	font-family: montserrat;
-
+	gap: 40px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .img-appart {
 	width: 100%; /* Prend toute la largeur du conteneur */
 	height: 400px; /* Ajuste la hauteur automatiquement pour garder les proportions */
 	object-fit: cover; /* Optionnel, utile si tu veux recadrer un peu sans déformation */
+}
+
+.tags {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tag-item {
+	background-color: #ff6060;
+	border-radius: 30px;
+	padding: 6px 22px;
+	color: white;
+	font-size: 0.8rem;
+}
+
+.apartment-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.apartment-info h1 {
+	font-size: 30px;
+	font-weight: 400;
+	color: #ff6060;
+}
+
+.apartment-info h2 {
+	font-weight: 200;
+}
+.apartment-header {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-between;
+}
+
+.host-rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.rating svg {
+	width: 24px;
+	height: 24px;
+	color: #ff6060;
+}
+.host-picture {
+	border-radius: 50%;
+	object-fit: cover;
+}
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
