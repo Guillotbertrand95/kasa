@@ -1,0 +1,40 @@
+.error-page {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	justify-content: space-between;
+	color: #333;
+}
+
+.error-page h1 {
+	font-size: 12rem;
+	margin: 0;
+	color: #ff6060;
+}
+
+.error-page p {
+	font-size: 1rem;
+	margin: 1rem 0 2rem;
+	color: #ff6060;
+}
+
+.error-page a {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+
+	text-decoration: underline;
+	border-radius: 0.3rem;
+	font-weight: 400;
+}
+@media (max-width: 768px) {
+	.error-page {
+		padding: 1rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.error-page h1 {
+		font-size: 5rem;
+	}
+}

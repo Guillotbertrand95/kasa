@@ -1,18 +1,18 @@
 .banner-home {
 	position: relative;
 	width: 100%;
+
 	height: 190px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 25px;
-	margin: 20px auto;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin: 20px auto 20px; // centré horizontalement
 
 	// Overlay sombre
 	&::before {
@@ -22,7 +22,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba(0, 0, 0, 0.5); // Noir à 50% d’opacité
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 0;
 	}
 }
@@ -30,8 +30,20 @@
 .banner-text {
 	position: relative;
 	color: white;
-	z-index: 1; // Pour apparaître au-dessus de l’overlay
+	z-index: 1;
 	font-size: 40px;
 	text-align: center;
 	font-family: montserrat;
+}
+@media screen and (max-width: 768px) {
+	.banner-home {
+		width: 80vw; // largeur fluide sur petit écran
+		height: clamp(150px, 25vw, 190px); // hauteur fluide
+		border-radius: 15px;
+		margin: 30px auto 20px;
+	}
+
+	.banner-text {
+		font-size: clamp(20px, 5vw, 32px); // texte qui reste lisible et fluide
+	}
 }

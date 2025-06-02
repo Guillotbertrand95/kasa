@@ -8,8 +8,9 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); // 3 colonnes égales
 	gap: 60px; // espace entre les cartes
+	background-color: #f6f6f6;
+	border-radius: 25px;
 
-	margin: 0 auto;
 	padding-bottom: 50px;
 }
 
@@ -25,4 +26,11 @@
 
 .card-wrapper {
 	animation: fadeIn 0.5s ease;
+}
+@media (max-width: 768px) {
+	.cards-container {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
 }

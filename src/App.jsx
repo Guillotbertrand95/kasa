@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Apartment from "./pages/Apartment";
@@ -14,10 +14,9 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/apartment/:id" element={<Apartment />} />
+				<Route path="404" element={<Error />} />
+				<Route path="*" element={<Navigate to="/404" />} />
 			</Route>
-
-			{/* Page erreur sans layout */}
-			<Route path="*" element={<Error />} />
 		</Routes>
 	);
 }

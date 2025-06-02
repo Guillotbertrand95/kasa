@@ -2,17 +2,11 @@
 
 .apartment-details {
 	width: 100%;
-	font-family: montserrat;
+	font-family: "montserrat";
 	gap: 40px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-}
-
-.img-appart {
-	width: 100%; /* Prend toute la largeur du conteneur */
-	height: 400px; /* Ajuste la hauteur automatiquement pour garder les proportions */
-	object-fit: cover; /* Optionnel, utile si tu veux recadrer un peu sans déformation */
 }
 
 .tags {

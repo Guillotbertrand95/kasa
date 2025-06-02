@@ -1,5 +1,5 @@
 :root {
-	font-family: Montserrat sans-serif;
+	font-family: "Montserrat", sans-serif;
 	line-height: 143%;
 	font-weight: 500;
 
@@ -20,11 +20,11 @@ img {
 a {
 	font-family: Montserrat;
 	font-weight: 500;
-	color: black;
+	color: blue;
 	text-decoration: inherit;
 }
 a:hover {
-	color: black;
+	color: blue;
 }
 
 body {
@@ -56,7 +56,6 @@ button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
 }
-
 @media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;

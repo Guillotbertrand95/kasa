@@ -2,7 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 40px;
+	margin-bottom: 20px;
+	flex-wrap: nowrap;
 }
 
 .navbar-logoH {
@@ -12,7 +13,8 @@
 
 .navbar-links {
 	display: flex;
-	gap: 50px;
+	gap: 20px;
+	align-items: center;
 }
 
 .navbar-links a {
@@ -21,10 +23,29 @@
 	font-weight: 500;
 }
 
-.navbar-links a.active-link {
+.navbar-links a.active-link,
+.navbar-links a:hover {
 	text-decoration: underline;
 }
 
-.navbar-links a:hover {
-	text-decoration: underline;
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.navbar-logoH {
+		height: 40px;
+		object-fit: contain;
+		flex-shrink: 0; /* le logo ne se compresse pas */
+	}
+
+	.navbar {
+		flex-wrap: wrap; /* important pour éviter l'overflow */
+		gap: 5px;
+	}
+
+	.navbar-links a {
+		justify-content: center;
+		gap: 5px;
+		white-space: nowrap;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
 }
