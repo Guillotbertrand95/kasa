@@ -46,3 +46,9 @@
 		font-size: 0.9rem;
 	}
 }
+@media screen and (max-width: 768px) {
+	.carousel {
+		width: 280px;
+		height: 280px;
+	}
+}

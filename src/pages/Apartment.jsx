@@ -57,11 +57,12 @@ function Apartment() {
 					</div>
 				</div>
 			</div>
-			<div className="description">
-				<Collapse title="Description">
-					<p>{logement.description}</p>
-				</Collapse>
-
+			<div className="description-container">
+				<div className="description">
+					<Collapse title="Description">
+						<p>{logement.description}</p>
+					</Collapse>
+				</div>
 				<div className="equipement">
 					<Collapse title="Équipements">
 						<ul>

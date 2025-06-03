@@ -26,12 +26,12 @@
 	color: white;
 	font-size: 0.8rem;
 }
-
 .apartment-info {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 15px;
 }
+
 .apartment-info h1 {
 	font-size: 30px;
 	font-weight: 400;
@@ -44,7 +44,6 @@
 .apartment-header {
 	display: flex;
 	flex-direction: row;
-
 	justify-content: space-between;
 }
 
@@ -62,8 +61,65 @@
 	border-radius: 50%;
 	object-fit: cover;
 }
-.description {
+.description-container {
+	width: 100%;
+	display: flex;
+	gap: 20px; /* ✅ Espace entre les deux blocs */
+	justify-content: space-between;
+	align-items: flex-start; /* important pour éviter les décalages verticaux */
+	flex-wrap: wrap; /* ✅ pour que ça passe en colonne sur petit écran */
+}
+
+.description,
+.equipement {
+	flex: 1; /* ✅ chaque bloc prend 50% de l’espace */
+	min-width: 300px; /* ✅ évite que ça casse trop tôt */
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+}
+
+.Collapse {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	.apartment-details {
+		gap: 2px;
+	}
+
+	.apartment-header {
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+	}
+	.apartment-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1px;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap; // 🔁 Permet aux éléments de passer à la ligne
+		gap: 0.5rem; // 🧘‍♂️ Petit espace entre les tags
+	}
+	.host-rating {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.host {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+
+	.host-picture {
+		width: 50px;
+		height: 50px;
+	}
 }

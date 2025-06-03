@@ -12,3 +12,11 @@
 	border-radius: 25px;
 	margin: 20px auto;
 }
+@media screen and (max-width: 768px) {
+	.banner-about {
+		width: 78vw; // largeur fluide sur petit écran
+		height: clamp(150px, 25vw, 190px); // hauteur fluide
+		border-radius: 15px;
+		margin: 30px auto 20px;
+	}
+}
