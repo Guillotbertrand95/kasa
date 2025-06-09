@@ -30,18 +30,22 @@ function About() {
 
 				<Collapse title="Service">
 					<p>
-						Nos équipes se tiennent à votre disposition pour vous
-						fournir une expérience parfaite. N'hésitez pas à nous
-						contacter si vous avez la moindre question.
+						La qualité du service est au coeur de notre engagement
+						chez Kasa. Nous veillons à ce que chaque interaction,
+						que ce soit avec nos hôtes ou nos locataires, soit
+						empreinte de respect et de bienveillance.
 					</p>
 				</Collapse>
 
 				<Collapse title="Sécurité">
 					<p>
-						La sécurité est la priorité de Kasa. Nous assurons aussi
-						bien la sécurité des logements que celle de nos
-						utilisateurs avec un système de double authentification
-						et un support réactif 24/7.
+						La sécurité est la priorité de Kasa. Aussi bien pour nos
+						Hôtes que pour les voyageurs, chzaque logement
+						correspond aux critère de sécurité établis par nos
+						services. En laissant une note aussi bien à l'hôte qu'au
+						locataire, cela permet à nos équipes de vérifier que les
+						standars sont bien respectés. Nous organisons également
+						des ateliers sur la sécurité domestique pour nos hôtes.
 					</p>
 				</Collapse>
 			</div>
