@@ -14,9 +14,8 @@ function Layout() {
 	return (
 		<div className={`layout page-${currentPage}`}>
 			<Navbar />
-			<main className="main-content">
-				<Outlet />
-			</main>
+			<main className="main-content"></main>
+			<Outlet />
 			<Footer />
 		</div>
 	);

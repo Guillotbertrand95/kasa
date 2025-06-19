@@ -26,12 +26,10 @@ function Apartment() {
 			<Carousel pictures={logement.pictures} />
 
 			<div className="apartment-header">
-				{/* Titre et location */}
 				<div className="apartment-info">
 					<h1>{logement.title}</h1>
 					<h2>{logement.location}</h2>
 
-					{/* Tags */}
 					<div className="tags">
 						{logement.tags.map((tags, index) => (
 							<span key={index} className="tag-item">
@@ -41,7 +39,6 @@ function Apartment() {
 					</div>
 				</div>
 
-				{/* Propriétaire + rating */}
 				<div className="host-rating">
 					<div className="host">
 						<p className="host-name">{logement.host.name}</p>

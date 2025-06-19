@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logoH.png"; // adapte le chemin si besoin
-import "../styles/navbar.scss"; // à créer si pas encore fait
+import "../styles/Navbar.scss"; // à créer si pas encore fait
 
 function Navbar() {
 	return (

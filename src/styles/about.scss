@@ -1,7 +1,4 @@
 @use "mixins";
-.test {
-	@include mixins.flex-between;
-}
 
 .about-container {
 	width: 100%;
@@ -22,7 +19,7 @@
 	border-radius: 5px;
 
 	cursor: pointer;
-	padding: 0 20px; // 👉 ajoute de l'espace à gauche et à droite
+	padding: 0 20px;
 }
 .collapse-content {
 	@include mixins.fadeIn(0.3s);
